@@ -1,12 +1,13 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import Login from './layouts/login'
 
 function Index() {
   return <h2>Home</h2>
 }
 
-function Login() {
-  return <h2>Login</h2>
+function App() {
+  return <h2>App</h2>
 }
 
 function AppRouter() {
@@ -21,11 +22,15 @@ function AppRouter() {
             <li>
               <Link to="/login/">Login</Link>
             </li>
+            <li>
+              <Link to="/app/">App</Link>
+            </li>
           </ul>
         </nav>
 
         <Route path="/" exact component={Index} />
         <Route path="/login/" component={Login} />
+        <Route path="/app/" component={App} />
       </div>
     </Router>
   )
