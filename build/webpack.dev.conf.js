@@ -1,5 +1,5 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path')
 
 const config = {
   mode: 'development',
@@ -35,6 +35,6 @@ const config = {
       template: './src/index.html',
     }),
   ],
-};
+}
 
-export default config;
+export default config

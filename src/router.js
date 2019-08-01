@@ -1,12 +1,12 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import React from 'react'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 function Index() {
-  return <h2>Home</h2>;
+  return <h2>Home</h2>
 }
 
 function Login() {
-  return <h2>Login</h2>;
+  return <h2>Login</h2>
 }
 
 function AppRouter() {
@@ -28,7 +28,7 @@ function AppRouter() {
         <Route path="/login/" component={Login} />
       </div>
     </Router>
-  );
+  )
 }
 
-export default AppRouter;
+export default AppRouter
