@@ -11,6 +11,7 @@ const config = {
     publicPath: '/'
   },
   devServer: {
+    historyApiFallback: true,
     contentBase: path.resolve('dist'),
     publicPath: '/',
     host: '127.0.0.1',

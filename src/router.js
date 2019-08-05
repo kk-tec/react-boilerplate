@@ -20,17 +20,17 @@ function AppRouter() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/login/">Login</Link>
+              <Link to="/login">Login</Link>
             </li>
             <li>
-              <Link to="/app/">App</Link>
+              <Link to="/app">App</Link>
             </li>
           </ul>
         </nav>
 
         <Route path="/" exact component={Index} />
-        <Route path="/login/" component={Login} />
-        <Route path="/app/" component={App} />
+        <Route path="/login" component={Login} />
+        <Route path="/app" component={App} />
       </div>
     </Router>
   )
