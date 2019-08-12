@@ -1,9 +1,10 @@
 import React, { PureComponent } from 'react'
 import { Form, Icon, Input, Button } from 'antd'
+import { inject } from 'mobx-react'
 import './index.less'
-
 const FormItem = Form.Item
 
+@inject('loginStore')
 class Login extends PureComponent {
   handleSubmit = e => {
     e.preventDefault()
@@ -11,7 +12,8 @@ class Login extends PureComponent {
       if (!err) {
         // 保存登录信息
         sessionStorage.setItem('userName', values.userName)
-        this.props.history.push('/app')
+        this.props.loginStore.setUsername(values.userName)
+        this.props.history.push('/home')
       }
     })
   }
